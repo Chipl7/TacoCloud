@@ -36,8 +36,7 @@ public class DesignTacoController {
                 new Ingredient("SRCR", "Sour Cream", Ingredient.Type.SAUCE)
         );
 
-        Ingredient.Type[] types = Ingredient.Type.values();
-        for (Ingredient.Type type : types) {
+        for (Ingredient.Type type : Ingredient.Type.values()) {
             model.addAttribute(type.toString().toLowerCase(),
                     filterByType(ingredients, type));
         }
@@ -54,7 +53,7 @@ public class DesignTacoController {
     }
 
     @GetMapping
-    public String showDesign() {
+    public String showDesignForm() {
         return "design";
     }
 
