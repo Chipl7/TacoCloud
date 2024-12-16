@@ -2,7 +2,7 @@ package tacos.controllers;
 
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.stereotype.Component;
-import tacos.entity.Ingredient;
+import tacos.model.Ingredient;
 
 import java.util.HashMap;
 import java.util.Map;
